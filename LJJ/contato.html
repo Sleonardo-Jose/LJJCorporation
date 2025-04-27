@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+    <style>
+        body {
+            background: radial-gradient(circle, #25D366, #128C7E);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .whatsapp-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .whatsapp-form label {
+            margin-bottom: 5px;
+        }
+
+        .whatsapp-form input,
+        .whatsapp-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .whatsapp-form button {
+            padding: 10px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .whatsapp-form button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça seu orçamento conosco:</h1>
+    <br>
+    <div class="whatsapp-form">
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+
+        <button onclick="enviarParaWhatsApp()">Enviar para WhatsApp</button>
+        <br>
+        <button onclick="enviarParaEmail()">Enviar Email</button>
+        <br>
+        <button type="button" onclick="window.location.href='index.html'">Voltar para o site</button>
+    </div>
+
+    <script>
+        function enviarParaWhatsApp() {
+            const nome = document.getElementById('nome').value.trim();
+            const mensagem = document.getElementById('mensagem').value.trim();
+            const numero = '5517992626192'; // Substitua pelo número desejado (com DDI e DDD)
+
+            if (!nome || !mensagem) {
+                alert('Por favor, preencha seu nome e a mensagem.');
+                return;
+            }
+
+            const textoWhatsApp = `Olá, meu nome é ${nome}. ${mensagem}`;
+            const urlWhatsApp = `https://wa.me/${numero}?text=${encodeURIComponent(textoWhatsApp)}`;
+            window.open(urlWhatsApp, '_blank');
+        }
+
+        function enviarParaEmail() {
+            const nome = document.getElementById('nome').value.trim();
+            const mensagem = document.getElementById('mensagem').value.trim();
+            const emailDestino = 'ljjscorporation@gmail.com'; // Substitua pelo e-mail desejado
+
+            if (!nome || !mensagem) {
+                alert('Por favor, preencha seu nome e a mensagem.');
+                return;
+            }
+
+            const assuntoEmail = `Mensagem de ${nome}`;
+            const corpoEmail = `Olá, meu nome é ${nome}. ${mensagem}`;
+            const urlEmail = `mailto:${emailDestino}?subject=${encodeURIComponent(assuntoEmail)}&body=${encodeURIComponent(corpoEmail)}`;
+            window.open(urlEmail, '_blank');
+        }
+    </script>
+</body>
+</html>
