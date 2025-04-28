@@ -31,7 +31,7 @@ header .info {
     text-align: right;/* Para alinhar o texto e botão */
 }
 
-header p {
+header h2 {
     font-size: 24px;
     color: #ffffff;
     margin-bottom: 15px;
@@ -104,21 +104,4 @@ footer{
 
 .card a:hover {
     background-color: #003fa3;
-}
-
-#menu {
-    display: flex;
-    gap: 20px;
-}
-
-#menu a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-#menu a:hover {
-    color: #d1e0ff;
 }
