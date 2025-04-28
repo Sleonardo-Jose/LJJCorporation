@@ -3,59 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cartao de visita</title>
+    <title>Cartão de Visita</title>
 
     <style>
-        *{
+        /* Estilos Gerais */
+        * {
             font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+        
         body {
             background: radial-gradient(circle, #1a28a8, #128c78);
+            color: #fff;
+            line-height: 1.6;
         }
+        
+        /* Cabeçalhos */
+        h1, h2, h3 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
         h1 {
-            text-align: center;
-            margin-top: 20px;
+            font-size: 2.5rem;
         }
-        h2, h3 {
-            text-align: center;
-            margin-top: 10px;
+
+        h2 {
+            font-size: 2rem;
         }
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 10px auto;
+            max-width: 800px;
+        }
+
+        /* Imagem */
         img {
             display: block;
-            margin: 0 auto;
-            width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
-            height: auto; /* Mantém a proporção da imagem */
+            margin: 20px auto;
+            max-width: 300px; /* Ajuste para imagens responsivas */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        h2 {
-            margin-top: 20px;
-        }
+
+        /* Botão */
         button {
             display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #0066ff; /* azul igual aos outros */
-            color: white; /* texto branco */
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: #0066ff; /* Azul chamativo */
+            color: #fff;
             border: none;
-            border-radius: 8px; /* borda arredondada */
-            font-size: 16px; /* tamanho da fonte */
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
             cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #004eb8; /* Efeito hover */
+            transform: scale(1.05); /* Leve aumento no tamanho */
+        }
+
+        button:active {
+            transform: scale(0.98); /* Efeito ao clicar */
         }
     </style>
 </head>
 <body>
     <h1>Cartão de Visita</h1>
-    <br>
-    <img src="img/image.png" alt="Modelo 1"> <!-- mudar, deixei só de exemplo para ver como fica-->
-    <br>
-    <h2>Modelo de cartão de visita</h2>
-    <h3>Faça o seu cartão de visita personalizado para as suas preferencias, 
-        fazemos cartões de visita para empresas, lojas, serviços e muito mais!<br>
-        Entre em contato conosco para mais informações e para solicitar o seu cartão de visita.<br>
+    <img src="img/image.png" alt="Modelo de Cartão"> <!-- Substituir por uma imagem real -->
+    <h2>Modelo de Cartão de Visita</h2>
+    <h3>
+        Personalize o seu cartão de visita conforme suas preferências! 
+        Criamos cartões para empresas, lojas, serviços e muito mais. <br>
+        Entre em contato para mais informações e solicite já o seu.
     </h3>
-    <br>
-    <button type="button" class="botao-voltar" onclick="window.location.href='modelos.html'">Voltar para o site</button>
+    <button type="button" onclick="window.location.href='modelos.html'">Voltar para o Site</button>
 </body>
 </html>
