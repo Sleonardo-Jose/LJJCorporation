@@ -6,49 +6,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LJJ Corporation</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header #menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        header .info {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        section#sobre {
+            background-color: #e9ecef;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        section#sobre h2, section#modelos h2 {
+            color: #0044cc;
+        }
+        .galeria {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 250px;
+            padding: 10px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .card a {
+            text-decoration: none;
+            color: #0044cc;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
-    
-    <header>
-        <div style="display: flex; align-items: center; gap: 40px;">
-            <div id="logo">
-                <img src="img/LJJ logo.jpg" alt="logo">
-            </div>
-            <nav id="menu">
-                <a href="contato.html">Contato</a>
-                <a href="modelos.html">Modelos</a>
-                <a href="redessociais.html">Redes Sociais</a>
-            </nav>
+<header>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 40px;">
+        <div id="logo">
+            <img src="img/LJJ logo.jpg" alt="logo" style="max-width: 100px;">
         </div>
-        <div class="info">
-            <p>Empresa de desenvolvimento web</p>
+        <nav id="menu">
+            <a href="contato.html">Contato</a>
+            <a href="modelos.html">Modelos</a>
+            <a href="redessociais.html">Redes Sociais</a>
+        </nav>
+    </div>
+    <div class="info">
+        <p>Empresa de desenvolvimento web</p>
+    </div>
+</header>
 
-        </div>
-    </header>
-    <main>
-        <section id="modelos">
-            <h2>Modelos de Sites</h2>
-            <div class="galeria">
-                <div class="card">
-                    <img src="img/vitinho.projeto.png" alt="Modelo 1"> <!-- mudar, deixei só de exemplo para ver como fica-->
-                    <h3>Portfolios visual forms</h3>
-                    <a href="modelo1/index.html" target="_blank">Ver Modelo</a>
-                </div>
-                <div class="card">
-                    <img src="img/logo vh.png" alt="Modelo 2">
-                    <h3>Portfólios visual code</h3>
-                    <a href="portfolio.html">Ver Modelo</a>
-                </div>
-                
+<main>
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos estudantes recém-formados em Técnico em Informática, apaixonados por tecnologia e desenvolvimento web. 
+           Nosso objetivo é oferecer soluções completas e personalizadas, com foco na criação de websites e sistemas funcionais, 
+           modernos e otimizados, tanto na área de frontend quanto backend.</p>
+        <p>Nosso compromisso é entregar serviços com extrema qualidade e perfeição profissional, sempre priorizando as 
+           necessidades de nossos clientes. Buscamos constantemente aprimorar nossas habilidades e proporcionar experiências 
+           digitais únicas e inovadoras.</p>
+        <p>Se você procura uma equipe dedicada, criativa e altamente profissional, estamos prontos para transformar suas ideias em realidade!</p>
+    </section>
+
+    <section id="modelos">
+        <h2>Modelos de Sites</h2>
+        <div class="galeria">
+            <div class="card">
+                <img src="img/vitinho.projeto.png" alt="Modelo 1">
+                <h3>Portfolios Visual Forms</h3>
+                <a href="modelo1/index.html" target="_blank">Ver Modelo</a>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 LJJ. Todos os direitos reservados.</p>
-        <p>Desenvolvido por LJJ</p>
-    </footer>
+            <div class="card">
+                <img src="img/logo vh.png" alt="Modelo 2">
+                <h3>Portfólios Visual Code</h3>
+                <a href="portfolio.html">Ver Modelo</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 LJJ Corporation. Todos os direitos reservados.</p>
+    <p>Desenvolvido com paixão e dedicação por LJJ.</p>
+</footer>
+
 </body>
 
 </html>
