@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes Sociais</title>
+    <style>
+        .botao-voltar {
+    background-color: #0066ff; /* azul igual aos outros */
+    color: white; /* texto branco */
+    border: none;
+    border-radius: 8px; /* borda arredondada */
+    padding: 10px 20px; /* espaço interno */
+    font-size: 16px; /* tamanho da fonte */
+    font-weight: bold; /* texto mais "pesado" */
+    cursor: pointer; /* muda o cursor para mãozinha */
+    transition: background-color 0.3s ease; /* animação suave */
+  }
+  
+  .botao-voltar:hover {
+    background-color: #0052cc; /* tom um pouco mais escuro no hover */
+  }
+    </style>
 </head>
 <body>
-    <button type="button" onclick="window.location.href='index.html'">Voltar para o site</button>
+    <button type="button" class="botao-voltar" onclick="window.location.href='index.html'">Voltar para o site</button>
     <h1>Redes Sociais</h1>
 </body>
 </html>
