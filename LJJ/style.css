@@ -51,60 +51,6 @@ footer{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
    border-radius: 30px 30px 0px 0px;
 }
-#modelos {
-    text-align: center;
-}
-
-#modelos h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.card {
-    background: white;
-    border-radius: 16px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.card h3 {
-    margin-top: 15px;
-    font-size: 20px;
-    color: #0052D4;
-}
-
-.card a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: white;
-    background-color: #0052D4;
-    padding: 10px 16px;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.card a:hover {
-    background-color: #003fa3;
-}
 
 #menu {
     display: flex;
@@ -122,3 +68,34 @@ footer{
 #menu a:hover {
     color: #d1e0ff;
 }
+.sobre-nos {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #f5f8fc;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .sobre-nos h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .sobre-nos p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  .sobre-nos .final-msg {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    color: #0a66c2;
+  }
