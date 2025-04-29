@@ -1,29 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redes Sociais</title>
-    <style>
-        .botao-voltar {
-    background-color: #0066ff; /* azul igual aos outros */
-    color: white; /* texto branco */
-    border: none;
-    border-radius: 8px; /* borda arredondada */
-    padding: 10px 20px; /* espaço interno */
-    font-size: 16px; /* tamanho da fonte */
-    font-weight: bold; /* texto mais "pesado" */
-    cursor: pointer; /* muda o cursor para mãozinha */
-    transition: background-color 0.3s ease; /* animação suave */
-  }
-  
-  .botao-voltar:hover {
-    background-color: #0052cc; /* tom um pouco mais escuro no hover */
-  }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redes Sociais</title>
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      color: aliceblue;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(90deg, #0052D4, #4364F7, #6FB1FC);
+      padding: 30px 60px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+
+    .botao-voltar {
+      background-color: #0066ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 30px;
+    }
+
+    .botao-voltar:hover {
+      background-color: #0052cc;
+    }
+
+    .social-container {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .social-container img {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-container img:hover {
+      transform: scale(1.1);
+    }
+
+    .social-container p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  </style>
 </head>
+
 <body>
-    <button type="button" class="botao-voltar" onclick="window.location.href='index.html'">Voltar para o site</button>
+  <header>
     <h1>Redes Sociais</h1>
+  </header>
+
+  <main class="social-container">
+    <a href="https://www.instagram.com/ljj_web_programming_conpany/" target="_blank">
+      <img src="img/instagram.png" alt="Instagram">
+    </a>
+    <p>Siga a gente no Instagram!</p>
+  </main>
+
+  <div style="text-align: left;">
+    <button type="button" class="botao-voltar" onclick="window.location.href='index.html'">Voltar para o site</button>
+  </div>
 </body>
+
 </html>
