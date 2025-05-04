@@ -42,7 +42,7 @@ main {
 }
 
 footer{
-    display: flex;
+    
     align-items: center;
     color: #f0f4f8;
     justify-content: space-between;
