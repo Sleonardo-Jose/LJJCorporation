@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de eletronicos</title>
+    <title>Site de Eletrônicos</title>
+
+    <!-- Fonte externa -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         /* Estilos Gerais */
@@ -15,9 +18,10 @@
         }
         
         body {
-            background: radial-gradient(circle, #1a28a8, #128c78);
+            background: radial-gradient(circle, #0a0a0a, #b6b309);
             color: #fff;
             line-height: 1.6;
+            padding: 20px;
         }
         
         /* Cabeçalhos */
@@ -44,7 +48,7 @@
         img {
             display: block;
             margin: 20px auto;
-            max-width: 300px; /* Ajuste para imagens responsivas */
+            max-width: 100%; /* Responsividade */
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -73,16 +77,51 @@
         button:active {
             transform: scale(0.98); /* Efeito ao clicar */
         }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            button {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>eletronicos</h1>
-    <img src="img/image copy.png" alt="Modelo de Cartão"> <!-- Substituir por uma imagem real -->
-    <h2>Modelo de divulgação de produtos eletronicos</h2>
-    <h3>
-        Criamos cartões para empresas, lojas, serviços e muito mais. <br>
-        Entre em contato para mais informações e solicite já o seu.
-    </h3>
-    <button type="button" onclick="window.location.href='modelos.html'">Voltar para o Site</button>
+    <!-- Cabeçalho principal -->
+    <header>
+        <h1>Eletrônicos</h1>
+    </header>
+
+    <!-- Imagem principal -->
+    <section>
+        <img src="img/image copy.png" alt="Modelo de Cartão Eletrônico"> <!-- Substituir por uma imagem real -->
+    </section>
+
+    <!-- Descrição -->
+    <section>
+        <h2>Modelo de Divulgação de Produtos Eletrônicos</h2>
+        <h3>
+            Criamos cartões para empresas, lojas, serviços e muito mais. <br>
+            Entre em contato para mais informações e solicite já o seu.
+        </h3>
+    </section>
+
+    <!-- Botão de navegação -->
+    <section>
+        <button type="button" onclick="window.location.href='modelos.html'">Voltar para o Site</button>
+    </section>
 </body>
 </html>
